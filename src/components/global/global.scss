@@ -1,0 +1,24 @@
+$width:662px;
+
+$width2:1200px;
+@mixin mob {
+    @media  (max-width: #{$width}){
+
+        @content
+    }
+        
+    
+
+};
+
+
+@mixin ipad {
+    @media (min-width: #{$width}) and (max-width: #{$width2}) {
+        @content;
+    }
+};
+
+@mixin responsive-font($size) {
+    font-size: calc(1vw + #{$size}px);
+}
+

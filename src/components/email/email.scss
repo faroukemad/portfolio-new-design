@@ -1,0 +1,253 @@
+
+@import '../global/global.scss';
+
+$bg-image: url('../../../public/assests/back5.jpg');
+.menu{
+
+    width: 800px;
+    height: 500px;
+    background-color: lightblue;
+    position: fixed;
+    top:-600px;
+    right: 400px;
+    z-index: 9999999999;
+  
+    transition: all 1.5s ease;
+   background-image: linear-gradient(312deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 41%,rgba(2, 2, 2, 0.03) 41%, rgba(2, 2, 2, 0.03) 45%,rgba(21, 21, 21, 0.03) 45%, rgba(21, 21, 21, 0.03) 53%,rgba(108, 108, 108, 0.03) 53%, rgba(108, 108, 108, 0.03) 58%,rgba(198, 198, 198, 0.03) 58%, rgba(198, 198, 198, 0.03) 73%,rgba(201, 201, 201, 0.03) 73%, rgba(201, 201, 201, 0.03) 88%,rgba(190, 190, 190, 0.03) 88%, rgba(190, 190, 190, 0.03) 100%),linear-gradient(244deg, rgba(20, 20, 20, 0.03) 0%, rgba(20, 20, 20, 0.03) 4%,rgba(150, 150, 150, 0.03) 4%, rgba(150, 150, 150, 0.03) 16%,rgba(211, 211, 211, 0.03) 16%, rgba(211, 211, 211, 0.03) 37%,rgba(132, 132, 132, 0.03) 37%, rgba(132, 132, 132, 0.03) 46%,rgba(216, 216, 216, 0.03) 46%, rgba(216, 216, 216, 0.03) 49%,rgba(216, 216, 216, 0.03) 49%, rgba(216, 216, 216, 0.03) 53%,rgba(7, 7, 7, 0.03) 53%, rgba(7, 7, 7, 0.03) 100%),linear-gradient(11deg, rgba(54, 54, 54, 0.03) 0%, rgba(54, 54, 54, 0.03) 27%,rgba(244, 244, 244, 0.03) 27%, rgba(244, 244, 244, 0.03) 33%,rgba(72, 72, 72, 0.03) 33%, rgba(72, 72, 72, 0.03) 39%,rgba(216, 216, 216, 0.03) 39%, rgba(216, 216, 216, 0.03) 41%,rgba(218, 218, 218, 0.03) 41%, rgba(218, 218, 218, 0.03) 80%,rgba(165, 165, 165, 0.03) 80%, rgba(165, 165, 165, 0.03) 86%,rgba(172, 172, 172, 0.03) 86%, rgba(172, 172, 172, 0.03) 100%),linear-gradient(114deg, rgba(183, 183, 183, 0.03) 0%, rgba(183, 183, 183, 0.03) 16%,rgba(62, 62, 62, 0.03) 16%, rgba(62, 62, 62, 0.03) 20%,rgba(2, 2, 2, 0.03) 20%, rgba(2, 2, 2, 0.03) 60%,rgba(227, 227, 227, 0.03) 60%, rgba(227, 227, 227, 0.03) 69%,rgba(83, 83, 83, 0.03) 69%, rgba(83, 83, 83, 0.03) 80%,rgba(25, 25, 25, 0.03) 80%, rgba(25, 25, 25, 0.03) 89%,rgba(141, 141, 141, 0.03) 89%, rgba(141, 141, 141, 0.03) 100%),linear-gradient(281deg, rgba(25, 25, 25, 0.03) 0%, rgba(25, 25, 25, 0.03) 14%,rgba(132, 132, 132, 0.03) 14%, rgba(132, 132, 132, 0.03) 86%,rgba(226, 226, 226, 0.03) 86%, rgba(226, 226, 226, 0.03) 90%,rgba(195, 195, 195, 0.03) 90%, rgba(195, 195, 195, 0.03) 91%,rgba(133, 133, 133, 0.03) 91%, rgba(133, 133, 133, 0.03) 92%,rgba(41, 41, 41, 0.03) 92%, rgba(41, 41, 41, 0.03) 98%,rgba(203, 203, 203, 0.03) 98%, rgba(203, 203, 203, 0.03) 100%),linear-gradient(90deg, rgb(45, 45, 45),rgb(27, 27, 27));
+    background-size:800px 500px;
+    @include ipad{
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mob{
+        width: 300px;
+        height: 500px;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    &.active{
+        
+        top:100px;
+        @include mob{
+          top: 50px;
+          }
+    }
+
+    .close{
+        display: flex;
+        cursor: pointer;
+        float: right;
+        margin: 20px;
+        fill:#fff;
+        @include mob{
+          
+            margin: 10px;
+          }
+    }
+    
+    .container{
+       margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include mob{
+          margin-top: 0;
+          width: 100%;
+          height: 100%;
+          justify-content: start;
+          }
+
+        .contact{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            @include mob{
+                font-size: 25px;
+                margin-left: 0;
+                text-align: center;
+              }
+        }
+        .dvs{
+            display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mob{
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+
+        .dv1{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .image{
+                height: 200px;
+                width: 200px;
+                overflow: hidden;
+                margin-left: 50px;
+                fill: #0c1241;
+                @include mob{
+                   height: 70px;
+                   width: 70px;
+                   margin-left: 0;
+                  }
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .dv2{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-right: 100px;
+            @include mob{
+                margin-right: 0;
+
+            }
+        }
+        .fstName{
+            height: 30px;
+            width: 260px;
+            margin-left: 150px;
+            margin-top: 50px;
+            border-radius: 15px;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            border: none;
+            color:black;
+
+            @include mob{
+                width: 180px;
+                margin-top: 10px;
+                margin-left: 0;
+            }
+        
+        }
+
+        .lstName{
+            height: 30px;
+            width: 260px;
+            margin-left: 150px;
+           border-radius: 15px;
+           margin-bottom: 15px;
+            padding-left: 10px;
+            border: none;
+            color:black;
+            @include mob{
+                width: 180px;
+                margin-left: 0;
+            }
+
+        }
+        
+        .inEmail{
+            height: 30px;
+            width: 260px;
+            margin-left: 150px;
+             border-radius: 15px;
+             margin-bottom: 15px;
+            padding-left: 10px;
+            border: none;
+            color:black;
+            @include mob{
+                width: 180px;
+                margin-left: 0;
+            }
+        }
+       
+        .errorMessage{
+            margin-left: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            color: #0c1241;
+            font-weight: bold;
+        }
+       
+        .txtMessage{
+            height: 50px;
+            width: 250px;
+            margin-left: 150px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            resize: none;
+            color: black;
+            @include mob{
+                width: 180px;
+                // height: 30px;
+                margin-left: 0;
+            }
+        }
+        .sub{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px ;
+            height: 40px;
+            width: 260px;
+            border-radius: 10px;
+            margin-left: 150px;
+           background-image: linear-gradient(to left ,   #0c1241   , #202d8b);
+           
+            cursor: pointer;
+            border: none;
+            @include mob{
+                width: 180px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.loaderx{
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:3px solid transparent;
+    border-top-color:#fff ;
+    animation: an1 1s ease infinite;
+
+}
+@keyframes an1 {
+0%{
+    transform: rotate(0turn);
+}
+    100%{
+        transform: rotate(1turn);
+
+    }
+}
+
+.mess{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.btnDis{
+    display: none;
+    
+}
+

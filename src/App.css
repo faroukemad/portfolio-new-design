@@ -1,5 +1,88 @@
+#root {
+  /* background-color: #282c34; */
+}
+
 .App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  transition: all 1s ease;
+  /* background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%); */
+  /* background-color: #040221; */
+  /* background-image: radial-gradient(circle, #ff0513, #3a1249, #040221); */
+  background-image: radial-gradient(circle,#040221 , #050430, #020115);
+  /* animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both; */
+}
+
+/* @media (max-width: 662px) {
+  .App {
+    height: auto;
+   }
+} */
+/* .Appsize{
+  height: 100px;
+} */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.spinner {
+  background-image: linear-gradient(135deg, #a8edea 10%, #fed6e3 100%);
+  width: 200px;
+  height: 200px;
+  animation: spinning82341 1.7s linear infinite;
   text-align: center;
+  border-radius: 50%;
+  filter: blur(1px);
+  box-shadow: 0px -5px 20px 0px #868f96, 0px 5px 20px 0px #596164;
+  z-index: 999999999999999999999999999999999999;
+  align-self: center;
+ 
+  
+}
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.spinner1 {
+  background: linear-gradient(to bottom, #d4d4d4, #888888);
+  
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  z-index: 999999999999999999999999999999999999;
+  align-self: center;
+}
+
+.back {
+  background-image: linear-gradient(94.3deg, #0E0C38 10.9%, rgba(81, 84, 115, 1) 87.1%);
+  transition: all 3s ease-in-out;
+
+}
+
+.sections {
+  width: 100%;
+  position: relative;
+  transition: all 1s ease;
+
 }
 
 .App-logo {
@@ -32,7 +115,105 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.background {
+  background-image: linear-gradient(135deg, #E3FDF5 10%, #FFE6FA 100%);
+  transition: all 3s ease-in-out;
+
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 9px;
+  background: #596164;
+  transform-origin: 0%;
+  z-index: 500;
+}
+
+.blurr {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #040221;
+  transform-origin: bottom;
+  z-index: 9999999999999999;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #040221;
+  transform-origin: bottom;
+  z-index: 9999999999999999;
 }

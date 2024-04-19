@@ -1,0 +1,266 @@
+@import '../global/global.scss';
+
+.about{
+    height:100vh;
+    // background: linear-gradient(4deg, rgba(4,2,33,1) 0%, rgba(40,44,52,1) 100%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @include mob{
+      overflow: hidden;
+    }
+
+    .wrapper2{
+      width: 30%;
+      background-color: #000;
+      height: 100%;
+      @include mob{
+        width: 0;
+      }
+    }
+    .about-background{
+      background-color: white;
+    }
+  
+    .wrapper{
+        display:flex;
+       
+       
+        width: 70%;
+        height: 100%;
+        // background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% ); 
+        background-image: radial-gradient(circle,#040221 , #050430, #020115);
+        @include mob{
+          width: 100%;
+        }
+        .aboutMe{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        @include mob{
+          text-align: center;
+          width: 100%;
+        }
+        
+        .abouth1{
+            
+            margin-bottom: 1vw;
+            transition: all 1s;
+            @include responsive-font(40);
+        }
+       
+        
+        p{
+            width: 50vw;
+           
+            line-height: 1.2;
+            // font-stretch: expanded;
+            text-align:center;
+           font-size: 1.7vw;
+
+
+            @include ipad{
+              width: 70vw;
+             font-size: 2.5vw;
+
+            }
+            @include mob{
+              width: 300px;
+              // font-size:20px;
+              
+              font-size: 4vw;
+            }
+
+
+        }
+        .cvDiv{
+            overflow: hidden;
+            display: flex;
+            align-self: center;
+        }
+        .cv{
+          color:whitesmoke;
+          margin-top: 4vw;
+          border: none;
+          padding: 1vw;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          justify-content: center;
+          border: 1px solid #5221e6;
+          //    background-color: lightblue;
+       border-radius: 30px;
+          transition: all .7s ease-in-out;
+          font-size:1vw;
+          @include mob{
+            margin-left: 0;  
+            font-size:3vw;
+            padding: 1vw;
+              }
+              @include ipad{
+                font-size:2vw;
+
+              }
+          }
+
+         }
+    }
+}
+
+.p {
+    color: lightblue;
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.p:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.cv:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    transform: scale(1.01);
+    color: #000;
+}
+
+
+
+
+
+.about-img{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%) !important;
+  width: 50vw;
+  object-fit: cover;
+  // filter: opacity(0.9);
+@include mob{
+  width: 200px;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-50%) !important;
+}
+@include ipad{
+  top: 50%;
+  transform: translate(-50%,-50%) !important;
+  width: 400px;
+  left: 30%;
+}
+}
+.about-based{
+  // color: hsla(0, 0%, 100%, 0.5);
+  color:lightgray;
+  z-index: 9;
+  position: relative;
+  font-size: 5vw;
+  transition: all 1s ease-out;
+@include mob{
+  font-size: 30px;
+}
+}
+.about-h1{
+  z-index: 9;
+  position: relative;
+ 
+  font-size: 5vw;
+@include mob{
+  font-size: 30px;
+}
+}
+.intro-svg{
+  position: absolute;
+  bottom: 0%;
+  right:  0%;
+  width: 10vw;
+  height: 25vh;
+  background: radial-gradient(circle, #414147 25%, transparent 26%);
+        background-size: 1em 1em;
+     
+        opacity: 1;
+@include mob{
+  width: 100px;
+}
+
+}
+.about-download{
+  margin-left: 10px;
+  z-index: 9999999999;
+}
+.download-active{
+  fill: #414147;
+}
+.about-background2{
+  background-image: linear-gradient(135deg, #E3FDF5 10%, #FFE6FA 100%) !important;
+}
+.btnn{
+           
+  background: none;
+  padding: 1vw;
+  border-radius: 2vw;
+  font-size: 1.2vw;
+  // margin-left: 150px ;
+  cursor: pointer;
+  margin-top: 3vw;color: white;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // animation: drop-up 7s ease 200ms backwards;
+  background-color:#FF0513 ; 
+  text-decoration: none;
+  z-index: 9;
+  @include mob{
+      margin-left: 0;  
+      font-size:12px;
+      margin-top: 40px;
+      padding: 10px;
+      border-radius: 30px;
+        }
+        @include ipad{
+          margin-left: 0;  
+          font-size:15px;
+          margin-top: 50px;
+          padding: 15px;
+          border-radius: 30px;
+            }
+
+            span{
+              z-index: 99999999999999;
+            }
+          }
+
+
+
+
+          .btnn::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background-image: linear-gradient(120deg,black,#040221);
+            z-index: 0;
+            transition: 0.8s;
+          }
+          .btnn::before,.btnn3::before{
+            top: 0;
+            border-radius: 0 0 50% 50%;
+          }
+         
+         
+          .btnn:hover::before,.btnn2:hover::before{
+            height: 180%;
+          }
