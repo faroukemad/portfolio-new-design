@@ -10,9 +10,11 @@ This project is a comprehensive portfolio showcasing the creative endeavors of F
 
 The portfolio offers a visually appealing and user-friendly interface where visitors can explore my projects, ranging from website designs and development projects to graphic design works and digital art pieces. Each project is presented with detailed descriptions, showcasing the technologies used and the creative process behind its creation.
 
-## Why I Used the Technologies I Used:
+## Main Technologies:
 
-I utilized a combination of HTML, Sass, Bootstrap and JavaScript to build the portfolio website, ensuring a seamless and responsive user experience across various devices. Additionally, I incorporated frameworks such as React.js for enhanced interactivity and ease of maintenance.
+.`React`
+.`Bootstrap`
+.`Sass`
 
 ## Challenges Faced and Features for the Future:
 
@@ -42,8 +44,11 @@ To Visit App:
 
 `localhost:3000`  
 
-## Screenshot
+## Screenshot:
 
 ![port](https://github.com/faroukemad/portfolio-new-design/assets/124167527/c64e61cf-f242-4d2d-aedd-ef129de3ec4a)
 
+## Live link:
+
+`https://farouk-works.vercel.app/`
 
