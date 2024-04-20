@@ -50,5 +50,5 @@ To Visit App:
 
 ## Live link:
 
-`https://farouk-works.vercel.app/`
+[https://farouk-works.vercel.app/](https://farouk-works.vercel.app/)
 
