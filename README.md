@@ -11,7 +11,7 @@ This project is a comprehensive portfolio showcasing the creative endeavors of F
 The portfolio offers a visually appealing and user-friendly interface where visitors can explore my projects, ranging from website designs and development projects to graphic design works and digital art pieces. Each project is presented with detailed descriptions, showcasing the technologies used and the creative process behind its creation.
 
 ## Main Technologies:
-React icon: &#x1F5A4;
+React icon: &#247;
 .`React`
 .`Bootstrap`
 .`Sass`
