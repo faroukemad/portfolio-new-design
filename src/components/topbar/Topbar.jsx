@@ -23,7 +23,7 @@ function Topbar({ backOpen, setBackOpen, menuOpen, setMenuOpen }) {
       opacity: 1,
       y: 0,
       transition: {
-        ease: "easeInOut",
+        ease: "easeOut",
         duration: 0.5,
       }
     }
