@@ -1,6 +1,6 @@
 # Farouk Works
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a comprehensive portfolio showcasing the creative endeavors of Farouk. From web development projects to graphic design and digital art, this platform serves as a curated collection. Explore diverse projects, delve into innovative designs, and connect with Farouk via social media channels or through direct contact to discuss collaboration opportunities and project inquiries.
 
 ## Available Scripts
 
