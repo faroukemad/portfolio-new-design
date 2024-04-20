@@ -20,6 +20,31 @@ Throughout the development process, I encountered challenges such as optimizing 
 
 Overall, "Farouk Works Portfolio" represents my dedication to craftsmanship and innovation, providing a platform for showcasing my talents and connecting with potential collaborators and clients in the digital space.
 
+## Installation and Setup Instructions
+
+#### Example:  
+
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+
+Installation:
+
+`npm install`  
+
+To Run Test Suite:  
+
+`npm test`  
+
+To Start Server:
+
+`npm start`  
+
+To Visit App:
+
+`localhost:3000`  
+
+
+
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
