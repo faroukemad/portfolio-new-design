@@ -130,6 +130,12 @@
   position: relative;
   text-decoration: none;
   z-index: 99;
+
+  &:hover {
+    .topbar-background {
+      background-color: rgb(34, 34, 34);
+    }
+  }
 }
 
 .element {
@@ -352,6 +358,8 @@
   top: -100%;
   left: -10%;
   z-index: 9;
+  transition: background-color .5s ease-out;
+
 }
 
 .menu-label {

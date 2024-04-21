@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import './projects.scss'
 import { Navigation, Pagination, Scrollbar, A11y, Parallax } from 'swiper/modules';
@@ -109,7 +109,7 @@ function Projects({ menuOpen, setMenuOpen, backOpen, setBackOpen }) {
         initial="hidden"
         animate='show'
       >
-        <motion.h1 variants={navText} className={"projects-h1 "+ (backOpen && "active")}>Projects</motion.h1>
+        <motion.h1 variants={navText} className={"projects-h1 " + (backOpen && "active")}>Projects</motion.h1>
 
         <Swiper className="swiper-size"
           // install Swiper modules
@@ -127,20 +127,43 @@ function Projects({ menuOpen, setMenuOpen, backOpen, setBackOpen }) {
         >
           <motion.div variants={navSwiper} initial="hidden"
             animate='show'>
+
+
+               <SwiperSlide  >
+              <div className="project-swiper-cont">
+                <img src="assests/word.jpg" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
+                {/* <p className="project-swiper-p1">April 2023</p> */}
+                <h1 className="project-swiper-h1 w-100">WordPress </h1>
+                <p className="project-swiper-p2"><a className="project-href" href="https://word-press-rouge-eight.vercel.app/" target="_blank" rel="noreferrer" ><GoLink className="project-link" /> </a> <a href="https://github.com/faroukemad/wordPress" target="_blank" rel="noreferrer"> <FaGithub className="project-hub" /></a></p>
+              </div>
+            </SwiperSlide>
+
+
             <SwiperSlide  >
               <div className="project-swiper-cont">
-                <img src="assests/coffeetime.png" id="xxx" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
+                <img src="assests/tavola.jpg" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
+                {/* <p className="project-swiper-p1">April 2023</p> */}
+                <h1 className="project-swiper-h1 w-100">Tavola </h1>
+                <p className="project-swiper-p2"><a className="project-href" href="https://tavola-mu.vercel.app/" target="_blank" rel="noreferrer" ><GoLink className="project-link" /> </a> <a href="https://github.com/faroukemad/Tavola" target="_blank" rel="noreferrer"> <FaGithub className="project-hub" /></a></p>
+              </div>
+            </SwiperSlide>
+
+
+
+            <SwiperSlide  >
+              <div className="project-swiper-cont">
+                <img src="assests/coffeetime.png" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
                 {/* <p className="project-swiper-p1">April 2023</p> */}
                 <h1 className="project-swiper-h1 w-100">Coffee Time </h1>
-                <p className="project-swiper-p2"><a className="project-href" href="http://coffeetime.epizy.com/" target="_blank" rel="noreferrer" ><GoLink className="project-link" /> </a> <a href="https://github.com/faroukemad/CoffeeTime" target="_blank" rel="noreferrer"> <FaGithub className="project-hub" /></a></p>
+                <p className="project-swiper-p2"><a className="project-href" href="https://coffee-time-drab.vercel.app/" target="_blank" rel="noreferrer" ><GoLink className="project-link" /> </a> <a href="https://github.com/faroukemad/CoffeeTime" target="_blank" rel="noreferrer"> <FaGithub className="project-hub" /></a></p>
               </div>
             </SwiperSlide>
             <SwiperSlide >
               <div className="project-swiper-cont">
-                <img src="assests/test3.png" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
+                <img src="assests/portfolio.jpg" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
                 {/* <p className="project-swiper-p1">March 2023</p> */}
                 <h1 className="project-swiper-h1 w-100">Portfolio </h1>
-                <p className="project-swiper-p2"><a className="project-href" href="https://www.behance.net/gallery/166970145/Portfolio-Web-Page" target="_blank" rel="noreferrer"><GoLink className="project-link" /> </a>  <FaGithub className="project-hub2" /></p>
+                <p className="project-swiper-p2"><a className="project-href" href="https://portfolio-mu-seven-25.vercel.app/" target="_blank" rel="noreferrer"><GoLink className="project-link" /> </a><a href="https://github.com/faroukemad/Portfolio" target="_blank" rel="noreferrer">  <FaGithub className="project-hub" /></a></p>
               </div>
             </SwiperSlide>
             <SwiperSlide >
@@ -175,14 +198,14 @@ function Projects({ menuOpen, setMenuOpen, backOpen, setBackOpen }) {
         <p className="project-swiper-p2"><a className="project-href" href="https://www.skedda.com/" target="_blank" rel="noreferrer"><GoLink className="project-link"/> </a> <a href="" target="_blank" rel="noreferrer"> <FaGithub className="project-hub2"/></a></p>
         </div>
         </SwiperSlide>      */}
-         </motion.div>
-            <div className="button-next-side position-absolute  text-white " style={{ top: '45%', right: '2%', zIndex: '99', cursor: 'pointer', borderRadius: '50%', backgroundColor: '#06091880' }} onClick={handleNextButtonClick}>
-              <IoIosArrowForward  className="swiper-forward"/>
-            </div>
-            <div className="button-prev-side position-absolute  text-white " style={{ top: '45%', left: '2%', zIndex: '99', cursor: 'pointer', borderRadius: '50%', backgroundColor: '#06091880' }} onClick={handlePrevButtonClick}>
-              <IoIosArrowBack  className="swiper-backward"/>
-            </div>
-         
+          </motion.div>
+          <div className="button-next-side position-absolute  text-white " style={{ top: '45%', right: '2%', zIndex: '99', cursor: 'pointer', borderRadius: '50%', backgroundColor: '#06091880' }} onClick={handleNextButtonClick}>
+            <IoIosArrowForward className="swiper-forward" />
+          </div>
+          <div className="button-prev-side position-absolute  text-white " style={{ top: '45%', left: '2%', zIndex: '99', cursor: 'pointer', borderRadius: '50%', backgroundColor: '#06091880' }} onClick={handlePrevButtonClick}>
+            <IoIosArrowBack className="swiper-backward" />
+          </div>
+
         </Swiper>
         <img className="intro-photo" src={imageSource} alt="" />
       </motion.div>
