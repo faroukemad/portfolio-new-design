@@ -150,7 +150,7 @@ function Projects({ menuOpen, setMenuOpen, backOpen, setBackOpen }) {
 
             <SwiperSlide  >
               <div className="project-swiper-cont">
-                <img src="assests/store.jpg" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
+                <img src="assests/store2.png" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
                 {/* <p className="project-swiper-p1">April 2023</p> */}
                 <h1 className="project-swiper-h1 w-100">Online Store </h1>
                 <p className="project-swiper-p2"><a className="project-href" href="https://store-zeta-eight.vercel.app/" target="_blank" rel="noreferrer" ><GoLink className="project-link" /> </a> <a href="https://github.com/faroukemad/Store" target="_blank" rel="noreferrer"> <FaGithub className="project-hub" /></a></p>
