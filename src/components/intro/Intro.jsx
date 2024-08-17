@@ -101,7 +101,7 @@ function Intro(props) {
           const imageSource = backOpen
           ? "assests/test10.svg"
           : "assests/test11.svg";
-          console.log(backOpen);
+          
   return (
 
     <div className={"intro"} id="intro">
