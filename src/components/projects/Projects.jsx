@@ -128,8 +128,16 @@ function Projects({ menuOpen, setMenuOpen, backOpen, setBackOpen }) {
           <motion.div variants={navSwiper} initial="hidden"
             animate='show'>
 
+            <SwiperSlide  >
+              <div className="project-swiper-cont">
+                <img src="assests/short.jpg" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
+                {/* <p className="project-swiper-p1">April 2023</p> */}
+                <h1 className="project-swiper-h1 w-100">Shortlisted </h1>
+                <p className="project-swiper-p2"><a className="project-href" href="https://shopshortlisted.com/" target="_blank" rel="noreferrer" ><GoLink className="project-link" /> </a>  <FaGithub className="project-hub2" /></p>
+              </div>
+            </SwiperSlide>
 
-               <SwiperSlide  >
+            <SwiperSlide  >
               <div className="project-swiper-cont">
                 <img src="assests/word.jpg" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
                 {/* <p className="project-swiper-p1">April 2023</p> */}
