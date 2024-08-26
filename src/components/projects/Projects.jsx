@@ -136,7 +136,14 @@ function Projects({ menuOpen, setMenuOpen, backOpen, setBackOpen }) {
                 <p className="project-swiper-p2"><a className="project-href" href="https://shopshortlisted.com/" target="_blank" rel="noreferrer" ><GoLink className="project-link" /> </a>  <FaGithub className="project-hub2" /></p>
               </div>
             </SwiperSlide>
-
+            <SwiperSlide  >
+              <div className="project-swiper-cont">
+                <img src="assests/space.png" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
+                {/* <p className="project-swiper-p1">April 2023</p> */}
+                <h1 className="project-swiper-h1 w-100">Space Adventure </h1>
+                <p className="project-swiper-p2"><a className="project-href" href="https://space-adventure-blond.vercel.app/" target="_blank" rel="noreferrer" ><GoLink className="project-link" /> </a> <a href="https://github.com/faroukemad/Space-Adventure" target="_blank" rel="noreferrer"> <FaGithub className="project-hub" /></a></p>
+              </div>
+            </SwiperSlide>
             <SwiperSlide  >
               <div className="project-swiper-cont">
                 <img src="assests/word.jpg" className="project-swiper-img" style={{ objectPosition, transition: 'all 1s ease-in-out' }} alt="" width={'100%'} height={'100%'} />
