@@ -3,7 +3,7 @@ import { GoLink } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 export default function ProjectsSlide({ imageSrc, title, link, githubLink }) {
 
-    const [objectPosition, setObjectPosition] = useState('0% center');
+    const [objectPosition] = useState('0% center');
 
     return (
         <div className="project-swiper-cont">

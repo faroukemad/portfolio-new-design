@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import AppProvider from './components/context/AppContext';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <BrowserRouter>
       <AppProvider>
         <Routes>
@@ -14,6 +17,7 @@ root.render(
         </Routes>
       </AppProvider>
     </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 

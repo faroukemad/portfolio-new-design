@@ -2,6 +2,8 @@ import React, { useState, useRef, useContext } from 'react'
 import BeatLoader from "react-spinners/BeatLoader";
 import emailjs from '@emailjs/browser';
 import { AppContext } from '../context/AppContext';
+import { useDispatch, useSelector } from 'react-redux';
+import { setIsDisabled } from '../../redux/formSlice';
 
 export default function EmailForm() {
     const { setMenuOpen } = useContext(AppContext);
@@ -28,17 +30,18 @@ export default function EmailForm() {
     };
     const [load, setLoad] = useState(false)
 
-    const [isDisabled, setDisibility] = useState(false);
+    // const [isDisabled, setDisibility] = useState(false);
+    const dispatch = useDispatch();
+    const isDisabled = useSelector((state) => state.form.isDisabled);
 
-    const checkEmail = e => {
-        if (e.target.name === 'user_email')
-            if (setDisibility(!(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(e.target.value)))) {
-                console.log('true')
-            }
-            else
-                console.log('false')
 
-    }
+    const checkEmail = (e) => {
+        if (e.target.name === 'user_email') {
+            const isInvalidEmail = !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(e.target.value);
+            dispatch(setIsDisabled(isInvalidEmail)); 
+            console.log(isInvalidEmail ? 'true' : 'false');
+        }
+    };
     return (
         <form className='dv2' ref={form} name='form' onSubmit={sendEmail}>
             <input className='fstName' name="user_name" type="text" placeholder='First Name' required />
@@ -54,7 +57,7 @@ export default function EmailForm() {
                     <BeatLoader
                         color={"white"}
                         loading={load}
-                        size={15}
+                        size={10}
                     />
                 </div>
                 <div className={"mess " + (load && "btnDis")}>
